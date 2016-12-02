@@ -1,0 +1,24 @@
+// программа с функциями выводящими фразы на экран
+#include <iostream> // директива препроцессора
+using namespace std; // делает видимыми определения; пространство имён
+void onPhraseOne(); // прототип функции
+void onPhraseTwo(); // прототип функции
+int main() // заголовок главной функции
+{ // начало тела функции
+	// вызовы фуннкций
+	onPhraseOne();
+	onPhraseOne();
+	onPhraseTwo();
+	onPhraseTwo();
+    return 0; // завершение функции main()
+} // конец тела функции				
+
+void onPhraseOne()
+{
+	cout << "Three blind mice" << endl;
+}
+
+void onPhraseTwo()
+{
+	cout << "See how they run" << endl;
+}
