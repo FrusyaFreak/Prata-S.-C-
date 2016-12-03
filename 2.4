@@ -1,0 +1,12 @@
+// программа переводит года в месяцы
+#include <iostream> // директива препроцессора
+int main() // заголовок главной функции
+{ // начало тела функции
+	using namespace std; // делает видимыми определения; пространство имён
+	cout << "Enter your age: ";
+	int years;
+	cin >> years;
+	int months = 12 * years;
+	cout << "Your age in months is " << months << endl;
+	return 0; // завершение функции main()
+} // конец тела функции	
