@@ -1,0 +1,18 @@
+// программа переводит градусы в цельсиях на фаренгейты
+#include <iostream> // директива препроцессора
+double celsiusToFahrenheit(double); // прототип функции
+int main() // заголовок главной функции
+{ // начало тела функции
+	using namespace std; // делает видимыми определения; пространство имён
+	cout << "Please enter a Celsius value: ";
+	double celsius;
+	cin >> celsius;
+	cout << celsius << " degrees Celsius is " << celsiusToFahrenheit(celsius) << " degrees Fahrenheit." << endl;
+	return 0; // завершение функции main()
+} // конец тела функции				
+
+double celsiusToFahrenheit(double cels)
+{
+	double fahr = 1.8 * cels + 32;
+	return fahr;
+}
